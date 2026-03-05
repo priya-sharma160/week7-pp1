@@ -4,6 +4,7 @@ const app = require("../app");
 const api = supertest(app);
 const Job = require("../models/jobModel");
 
+
 // Seed data
 const jobs = [
   {
@@ -11,17 +12,27 @@ const jobs = [
     type: "Full-Time",
     description: "We are seeking a talented Front-End Developer to join our team in Helsinki.",
     company: {
-      name: "NewTek Solutions",
+      name: "Prathna Solutions",
       contactEmail: "contact@nteksolutions.com",
       contactPhone: "09-123-4567",
     },
   },
   {
-    title: "Junior Python Developer",
+    title: "Senior Python Developer",
     type: "Part-Time",
     description: "Join our Python team and help build data-driven applications.",
     company: {
-      name: "DataSoft",
+      name: "Afrin Technologies",
+      contactEmail: "hr@datasoft.com",
+      contactPhone: "09-765-4321",
+    },
+  },
+  {
+    title: "Junior Full-Stack Developer",
+    type: "Part-Time",
+    description: "Join our Python team and help build data-driven applications.",
+    company: {
+      name: "Priya Solutions",
       contactEmail: "hr@datasoft.com",
       contactPhone: "09-765-4321",
     },
